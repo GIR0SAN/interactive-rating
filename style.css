@@ -68,10 +68,19 @@ ul{
     font-weight: 700;
     padding:24px;
     min-width: 60px;
-    background-color: #2d3847;
+    background-color: var(--Gray);
     border-radius: 50%;
     cursor: pointer;
     text-align: center;
+    transition: .15s ease-in-out;
+}
+
+.c-number__list:hover{
+    background-color: var(--Light-Grey);
+}
+
+.c-number__list:active{
+    background-color: var(--Orange);
 }
 
 .c-submit{
@@ -84,6 +93,13 @@ ul{
     background-color: var(--Orange);
     border: none;
     border-radius: 90px;
+    cursor: pointer;
+    transition: .25s ease-in-out;
+}
+
+.c-submit:hover{
+    background-color: var(--White);
+    color: var(--Orange);
 }
 
 .l-modal{
