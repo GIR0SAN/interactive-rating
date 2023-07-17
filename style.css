@@ -35,7 +35,6 @@ body{
     width: 414PX;
     padding: 30PX;
     border-radius: 16px;
-    display: ;
 }
 
 .c-star__image{
@@ -55,31 +54,43 @@ body{
     color: var(--Light-Grey);
 }
 
-ul{
-    list-style: none;
+.l-rates{
     display: flex;
+    flex-direction: row;
     margin: 20px 0;
     justify-content: space-between;
     height: 60px;
     align-items: center;
+    position: relative;
 }
 
-.c-number__list{
+input{
+   display: none;
+}
+
+.elementos{
     font-weight: 700;
     padding:24px;
-    min-width: 60px;
+    max-width: 50px;
+    max-height: 50px;
     background-color: var(--Gray);
     border-radius: 50%;
     cursor: pointer;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: .15s ease-in-out;
 }
 
-.c-number__list:hover{
+.elementos:hover{
     background-color: var(--Light-Grey);
 }
 
-.c-number__list:active{
+.elementos:focus{
+    background-color: var(--Light-Grey);
+}
+
+.elemento.selecionado{
     background-color: var(--Orange);
 }
 
