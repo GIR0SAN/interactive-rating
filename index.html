@@ -10,39 +10,31 @@
   <title>Interactive rating component</title>
 </head>
 <body>
-  <header>
+ <header>
     <div class="l-container">
       <main class="l-main">
-
         <img src="images/icon-star.svg" alt="Icon star" class="c-star__image">
-
         <div class="l-text__wrapper">
           <h1 class="c-h1">How did we do?</h1>
           <p class="c-paragraph">Please let us know how we did with your support request. All feedback is appreciated 
             to help us improve our offering!</p>
         </div>
 
-        <div class="l-rates" id="options">
-
-          <div class="elementos" id="um">1</div>
-          <div class="elementos" id="um">2</div>
-          <div class="elementos" id="um">3</div>
-          <div class="elementos" id="um">4</div>
-          <div class="elementos" id="um">5</div>
-
-        </div>
-
-        <button type="submit" id="button" class="c-submit">Submit</button >
+        <ul class="l-rates">
+          <li class="c-rating__number">1</li>
+          <li class="c-rating__number">2</li>
+          <li class="c-rating__number">3</li>
+          <li class="c-rating__number">4</li>
+          <li class="c-rating__number">5</li>
+        </ul>
+        <button class="c-submit">Submit</button >
       </main>
 
-      <div class="l-modal" id="modal">
+      <div class="l-modal">
         <div class="l-modal_wrapper">
           <img src="images/illustration-thank-you.svg" alt="Decorative">
-    
-        
-          
           <div class="l-result" id="thankyou">
-            <p class="c-result__text">You selected <span id="userValue"></span> out of 5</p>
+            <p class="c-result__text">You selected <span class="user-value"></span> out of 5</p>
     
             <div class="l-text__wrapper">
               <h2 class="c-h1">Thank you!</h2>
@@ -56,46 +48,6 @@
     </div>
   </header> 
 
-  
-
   <script src="script.js"></script>
 </body>
 </html>
-
-
-<!--
-
-
-
-  
-
-  
-
-  1 2 3 4 5
-
-  Submit
-
-  
-
-  You selected  out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-.attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-
-## Typography
-
-### Body Copy
-
-- Font size (paragraph): 15px
-
-### Font
-
-- Family: [Overpass](https://fonts.google.com/specimen/Overpass)
-- Weights: 400, 700
-
--->

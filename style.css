@@ -64,11 +64,7 @@ body{
     position: relative;
 }
 
-input{
-   display: none;
-}
-
-.elementos{
+.c-rating__number{
     font-weight: 700;
     padding:24px;
     max-width: 50px;
@@ -82,16 +78,27 @@ input{
     transition: .15s ease-in-out;
 }
 
-.elementos:hover{
+.c-rating__number:hover{
     background-color: var(--Light-Grey);
 }
 
-.elementos:focus{
-    background-color: var(--Light-Grey);
-}
-
-.elemento.selecionado{
+.l-rates li.active-rate{
     background-color: var(--Orange);
+    opacity: 1;
+}
+
+.selecionado{
+    font-weight: 700;
+    padding:24px;
+    max-width: 50px;
+    max-height: 50px;
+    background-color: var(--Orange);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .15s ease-in-out;
 }
 
 .c-submit{
