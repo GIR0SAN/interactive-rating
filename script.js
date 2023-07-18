@@ -15,5 +15,5 @@ ratingCard.addEventListener('click', parseRating)
 
 button.addEventListener('click', ()=> {
   popup.style.display = "flex"
-  pickedRating.innerText = `$(rating)`
+  pickedRating.innerText = `${rating}`
 })

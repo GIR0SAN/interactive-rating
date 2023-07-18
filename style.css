@@ -3,7 +3,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-
 :root{
     --Orange:hsl(25, 97%, 53%);
     --White: hsl(0, 0%, 100%);
@@ -13,15 +12,12 @@
     --Very-Dark-Blue: hsl(216, 12%, 8%);
     --Gray: #2d3847;
 }
-
 body{
     font-family: 'Overpass', sans-serif;
     font-size: 15px;
     background-color: var(--Very-Dark-Blue);
     color: var(--White);
-
 }
-
 .l-container{
     display: flex;
     align-items: center;
@@ -29,31 +25,26 @@ body{
     height: 100vh;
     position: relative;
 }
-
 .l-main{
     background-color:var(--Dark-Blue);
     width: 414PX;
     padding: 30PX;
     border-radius: 16px;
 }
-
 .c-star__image{
     padding: 24px;
     background-color: var(--Gray);
     border-radius: 50%;
     margin-bottom: 36px;
 }
-
 .c-h1{
     font-size: 2.125rem;
     margin-bottom: 20px;
 }
-
 .c-paragraph{
     line-height: 150%;
     color: var(--Light-Grey);
 }
-
 .l-rates{
     display: flex;
     flex-direction: row;
@@ -63,7 +54,6 @@ body{
     align-items: center;
     position: relative;
 }
-
 .c-rating__number{
     font-weight: 700;
     padding:24px;
@@ -77,30 +67,13 @@ body{
     align-items: center;
     transition: .15s ease-in-out;
 }
-
 .c-rating__number:hover{
     background-color: var(--Light-Grey);
 }
-
 .l-rates li.active-rate{
     background-color: var(--Orange);
     opacity: 1;
 }
-
-.selecionado{
-    font-weight: 700;
-    padding:24px;
-    max-width: 50px;
-    max-height: 50px;
-    background-color: var(--Orange);
-    border-radius: 50%;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: .15s ease-in-out;
-}
-
 .c-submit{
     text-transform: uppercase;
     font-size: 20px;
@@ -114,12 +87,10 @@ body{
     cursor: pointer;
     transition: .25s ease-in-out;
 }
-
 .c-submit:hover{
     background-color: var(--White);
     color: var(--Orange);
 }
-
 .l-modal{
     background-color:var(--Dark-Blue);
     width: 414px;
@@ -129,11 +100,28 @@ body{
     position: absolute;
     display: none;
 }
-
 .c-result__text{
     color: var(--Orange);
     padding: 8px 16px;
     width: fit-content;
     margin: 30px auto ;
     background-color: var(--Gray); 
+}
+
+@media screen and (max-width:375px) {
+    .l-main{
+        width: 322px;
+        padding: 22PX;
+        margin: 160px 0;
+    }
+
+    .l-container{
+        height: auto;
+    }
+    
+    .l-modal{
+        width: 322px;
+        margin: 160px 0;
+    }
+
 }
